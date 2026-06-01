@@ -1,0 +1,7 @@
+[package]
+name = "point-oc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sci-rs = { git = "https://github.com/ctiedt/rasta-rs", version = "0.1.0" }
