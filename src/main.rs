@@ -3,6 +3,7 @@ use sci_rs::{
     scip::{SCIPointLocation, SCIPointTargetLocation},
 };
 
+#[link(wasm_import_module = "env")]
 unsafe extern "C" {
     fn recv_msg(buf: *mut u8) -> usize;
     fn send_msg(msg: *const u8, len: usize);
